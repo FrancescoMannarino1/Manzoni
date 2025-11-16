@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          body,html {
+             height: 100%;
+             width: 100%;
+             scroll-behavior: smooth;
+         
+        }
+        body {
+              background-color:rgb(204, 159, 105);
+        }
+ @font-face {
+            font-family: Playfair; 
+            src: url('../Fonts/PlayfairDisplay-VariableFont_wght.ttf')
+        }
+#titolo {
+         font-family: Playfair;
+         text-align:center;
+         font-size: 120px;
+         font-weight: 600;
+         color:rgb(87, 64, 36);
+         margin: 0;
+      }
+     .link {
+       align-items: center;
+       justify-content: center;
+       font-size: 30px;
+       margin: 0;
+       display:flex;
+       gap: 35px;
+      }
+      .link a {
+          font-family: Playfair;
+          text-decoration: none;
+          color:rgb(87, 64, 36);
+          font-weight: 600;
+          margin-top: 2%;
+      }
+      hr{
+    max-width: 90%;
+    border: none;
+    height: 3px;
+    background-color: rgb(87, 64, 36);
+      }
+         .vita {
+    max-width: 96%;
+     padding-bottom: 1.5%;
+   }
+  .vita p{ 
+      font-size: 39px;
+      
+    }
+    
+      h1{
+     font-size: 70px;
+     margin-top: 3.21%;
+     text-align: center;
+     margin-left: 8.2%;
+
+  }
+  p {
+    margin-left: 5%;
+  }
+.image-container {
+    position: relative;
+    margin-left: 5%;
+    float: left;
+    margin-right: 3%;
+    margin-top: -6%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+   #img{
+       width: 50vh;
+       height: 57vh;
+       position: relative;
+       z-index: 1;
+     
+   }
+   .image-container:hover {
+    transform: scale(1.05);
+   }
+   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 2;
+   }
+   .overlay p {
+    position: absolute;
+    z-index: 3;
+    font-size: 21px;
+    font-family: Playfair;
+    text-align: center;
+    bottom: 10px;
+    color: white;
+    padding: 5px;
+    margin-right: 3%;
+   }
+   .overlay h1 {
+    position: absolute;
+    z-index: 3;
+    font-size: 45px;
+    font-family: Playfair;
+    left: 9%;
+    color:white;
+    top: 6%;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 90%;
+   }
+   .overlay hr {
+      position: absolute;
+      z-index: 3;
+    top: 50%;       
+    transform: translateY(-48%);
+    left: 7.5%;
+    width: 85%;
+    height: 4px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+   }
+.image-container:hover .overlay {
+    opacity: 1;
+}
+.image-container #immagineimg1 {
+   opacity: 0.8;
+
+}
+.image-container #immagineimg2 {
+   opacity: 0.8;
+
+}
+#immagineimg1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.3; 
+  z-index: 1;  
+}
+#immagineimg2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.3; 
+  z-index: 1;  
+}
+
+ #img1{
+       width: 70vh;
+       height: 80vh;
+       position: relative;
+       z-index:1;
+       
+   }
+      #toTop {
+    position: fixed;
+    margin: 0;
+    left: 50%;
+    top: 5%;
+    color: black;
+    font-weight:900;
+    padding: 5px 9px;
+    opacity: 0.4;
+    font-size: 50px;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.354);
+    transition: opacity 0.3s ease, color 0.3s ease;
+    
+
+}
+
+#toTop:hover {
+    opacity: 1;
+     background-color: rgba(0, 0, 0, 0.816);
+     color:white;
+}
+#logo{
+    width:16vh;
+    height: 12vh;
+    margin-left: 11vh;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 4%;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+ #logo:hover{
+    transform: scale(1.1);
+ }
+
+
+    </style>
+    <title>Alessandro Manzoni-Le Opere</title>
+</head>
+<body>
+<a href="/Esercizio Manzoni/index.html"> <img id="logo"src="Immagini/Ritratto_di_Alessandro_Manzoni_by_Francesco_Hayez.jpg"></a>
+      <h1 id="titolo"> Alessandro Manzoni</h1>
+  <div class="link">
+    <a href="/Esercizio Manzoni/index.html">Home</a>
+    <a href="/Esercizio Manzoni/opere.html">Opere</a>
+</div>
+    <hr>
+    <div class="vita">
+      <h1 style="font-size: 50px;">I promessi sposi</h1>
+<div class="image-container">
+      <img src="Immagini/I-promessi-sposi.jpg" id="img">
+      <div class="overlay"> 
+        <img src="Immagini/renzo e lucia.png" id="immagineimg1">
+        <h1>Renzo e Lucia</h1>
+        <hr>
+        <p><b>Renzo e Lucia desiderano solo costruirsi una vita insieme, ma un abuso di potere distrugge i loro piani e li trascina in una serie di eventi imprevedibili. Separati, costretti a fuggire e a confrontarsi con crisi, ingiustizie e caos, i due protagonisti diventano il centro di una vicenda ricca di tensione e svolte improvvise.</b></p>
+      </div>
+      </div>
+<p><i>"Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti, tutto a seni e a golfi, a seconda dello sporgere e del rientrare di quelli, vien quasi a un tratto a ristringersi, e a prender corso e figura di fiume, tra un promontorio a destra e un'ampia costiera dall'altra parte. Il ponte, che ivi congiunge le due rive, par che renda ancor più sensibile all’occhio questa trasformazione e segni il punto in cui il lago cessa, e l’Adda ricomincia, per ripigliar poi nome di lago dove le rive, allontanandosi di nuovo, lascian l’acqua distendersi e rallentarsi in nuovi golfi e in nuovi seni."</i></p>
+
+  <hr>
+   <h1 style="font-size: 50px;">Il cinque maggio</h1>
+   <div class="image-container">
+   <img src="Immagini/il-cinque-maggio.jpg" id="img1">
+     <div class="overlay">
+      <img src="Immagini/Napoleone.png" id="immagineimg2">
+      <h1 style="top:12%; font-size: 55px;">Il cinque Maggio</h1>
+      <hr>
+      <p style="font-size: 25px;"><b>“Il cinque maggio” racconta la morte di Napoleone vista attraverso gli occhi di Manzoni. Non è solo il ritratto di un grande generale caduto, ma una riflessione sul destino di chi ha avuto potere, gloria e poi ha conosciuto il declino. Manzoni ripercorre le vittorie, le sconfitte e la solitudine finale dell’imperatore, chiedendosi quale sia il vero valore della sua grandezza. Il risultato è un’ode intensa, che unisce storia, emozione e meditazione morale.</b></p>
+     </div>
+   </div>
+<p><i>"Ei fu. Siccome immobile, dato il mortal sospiro, stette la spoglia immemore orba di tanto spiro, così percossa, attonita la terra al nunzio sta, muta pensando all’ultima ora dell’uom fatale; <br><br>
+
+né sa quando una simile orma di piè mortale la sua cruenta polvere a calpestar verrà. <br><br>
+
+Lui folgorante in solio vide il mio genio e tacque; quando, con vece assidua, cadde, risorse e giacque, di mille voci al sonito mista la sua non ha: <br><br>
+
+vergin di servo encomio e di codardo oltraggio, sorge or commosso al subito sparir di tanto raggio; e scioglie all’urna un cantico che forse non morrà. <br><br>
+
+Dall’Alpi alle Piramidi, dal Manzanarre al Reno, di quel securo il fulmine tenea dietro al baleno; scoppiò da Scilla al Tanai, dall’uno all’altro mar. <br><br>
+
+Fu vera gloria? Ai posteri l’ardua sentenza: nui chiniam la fronte al Massimo Fattor, che volle in lui del creator suo spirito più vasta orma stampar. <br><br>
+
+La procellosa e trepida gioia d’un gran disegno, l’ansia d’un cor che indocile serve pensando al regno; e il giunge, e tiene un premio ch’era follia sperar; <br><br>
+
+tutto ei provò: la gloria maggior dopo il periglio, la fuga e la vittoria, la reggia e il tristo esiglio; due volte nella polvere, due volte sull’altar. <br><br>
+
+Ei si nomò: due secoli, l’un contro l’altro armato, sommessi a lui si volsero, come aspettando il fato; ei fe' silenzio, ed arbitro s’assise in mezzo a lor. <br><br>
+
+E sparve, e i dì nell’ozio chiuse in sì breve sponda, segno d’immensa invidia e di pietà profonda, d’inestinguibil odio e d’indomato amor. <br><br>
+
+Come sul capo al naufrago l’onda s’avvolve e pesa, l’onda su cui del misero, alta pur dianzi e tesa, scorrea la vista a scernere prode remote invan; <br><br>
+
+tal su quell’alma il cumulo delle memorie scese! Oh quante volte ai posteri narrar sé stesso imprese, e sull’eterne pagine cadde la stanca man! <br><br>
+
+Oh quante volte, al tacito morir d’un giorno inerte, chinati i rai fulminei, le braccia al sen conserte, stette, e dei dì che furono l’assalse il sovvenir! <br><br>
+
+E ripensò le mobili tende, e i percossi valli, e il lampo de’ manipoli, e l’onda dei cavalli, e il concitato imperio, e il celere ubbidir. <br><br>
+
+Ahi! Forse a tanto strazio cadde lo spirto anelo, e disperò; ma valida venne una man dal cielo e in più spirabil aere pietosa il trasportò; <br><br>
+
+e l’avviò, pei floridi sentier della speranza, ai campi eterni, al premio che i desideri avanza, dov’è silenzio e tenebre la gloria che passò. <br><br>
+
+Bella Immortal! benefica Fede ai trionfi avvezza! scrivi ancor questo, allegrati; ché più superba altezza al disonor del Golgota giammai non si chinò. <br><br>
+
+Tu dalle stanche ceneri sperdi ogni ria parola: il Dio che atterra e suscita, che affanna e che consola, sulla deserta coltrice accanto a lui posò."" <br><br></i></p>
+
+
+ </div>    
+     <a href="#" id="toTop">↑<a/a>
+</body>
+</html>
